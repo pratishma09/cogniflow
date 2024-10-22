@@ -11,7 +11,7 @@ import { HambugerMenu } from "./design/Header";
 const Header = () => {
   const pathname = useLocation();
 
-  const [openNavigation, setOpenNavigation] = useState(true);
+  const [openNavigation, setOpenNavigation] = useState(false);
 
   const toggleNavigation = () => {
     if (openNavigation) {
@@ -80,7 +80,6 @@ const Header = () => {
         >
           New account
         </a>
-        
       </div>
     </div>
   );
